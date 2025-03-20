@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="/css/style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        
+        <div class="content">
+            <h1>Welcome to TaskYatra</h1>
+            <p>"Organize, Prioritize, and Achieve – Your Productivity Starts Here!"</p>
+            <a href="/login" class="btn" id="getStarted">Get Started</a>
+        </div>
+        
+        <div class="indicators">
+            <% for(let i = 0; i < 3; i++) { %>
+                <div class="indicator <%= i === 0 ? 'active' : '' %>" data-index="<%= i %>"></div>
+            <% } %>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

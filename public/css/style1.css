@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-image: url(/images/bg.jpeg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000;
+    background-size: cover;
+    background-position: center
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    height: 540px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 62px;
+    font-weight: 700;
+    color: #201e1e;
+    text-shadow: 2px 2px 4px rgba(62, 61, 61, 0.1);
+}
+
+.content p {
+    font-size: 23px;
+    color: #610303;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 25px 40px;
+    font-size: 28px;
+    font-weight: 650;
+    color: white;
+    background: linear-gradient(135deg, #db415a, #e396b6);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 118, 140, 0.3);
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 118, 140, 0.5);
+}
+
+.indicators {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #ff758c;
+    transform: scale(1.3);
+}
